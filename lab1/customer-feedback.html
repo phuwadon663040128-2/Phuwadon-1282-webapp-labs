@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Customer Feedback Survey</h1>
+        <p><em>Your opinion matters to us! Please share your experience</em></p>
+    </header>
+    <main>
+        <section id="Customer">
+        <fieldset>
+            <legend>Customer Information</legend><br>
+            <div>
+                <label for="Fullname">Full Name *</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div><br>
+            <div>
+                <label for="Email">Email Address *</label><br>
+                <input type="text" id="email" name="email" placeholder="your.email@example.com" required>
+            </div><br>
+            <div>
+                <label for="Phone">Phone Number</label><br>
+                <input type="text" id="phone" name="phone" placeholder="+1 (555) 123-4567" >
+            </div><br>
+            <div>
+                <label for="CustomerID">Customer ID</label><br>
+                <input type="text" id="customerID" name="customerID" placeholder="Enter your customer ID" >
+            </div><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Service Evaluation</legend>
+            <label>Overall Service Rating (1-5)*</label><br>
+            <label>
+                <input type="radio" name="rating" value="1">1 - Poor
+            </label><br>
+            <label>
+                <input type="radio" name="rating" value="2">2 - Fair
+            </label><br>
+            <label>
+                <input type="radio" name="rating" value="3">3 - Good
+            </label><br>
+            <label>
+                <input type="radio" name="rating" value="4">4 - Very Good
+            </label><br>
+            <label>
+                <input type="radio" name="rating" value="5">5 - Excellent
+            </label><br><br>
+
+            <label>Service Category *</label><br>
+            <select name="service" id="service">
+                <option value>Select service category</option>
+                <option value>Technical Support</option>
+                <option value>Sales Billing</option>
+                <option value>General Inquiry</option>
+            </select><br><br>
+
+             <label>Would you recommend our service to others? *</label><br>
+            <label>
+                <input type="radio" name="recommend" value="1">Yes, definitely
+            </label><br>
+            <label>
+                <input type="radio" name="recommend" value="2">Maybe
+            </label><br>
+            <label>
+                <input type="radio" name="recommend" value="3">No, I would not
+            </label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>experience Details</legend><br>
+            <label for="date">Visit Date</label><br>
+            <input type="date" id="date" name="date"> <br><br>
+
+            <label>How did you hear about us? (Select all that apply)</label>
+            <input type="checkbox" name="hear" id="hear">Social Media <br>
+            <input type="checkbox" name="hear" id="hear">Friend?Family Recommendation <br>
+            <input type="checkbox" name="hear" id="hear">Advertisement <br>
+            <input type="checkbox" name="hear" id="hear">Search Engine <br>
+            <input type="checkbox" name="hear" id="hear">Other <br><br>
+
+            <label>Additional Comments</label><br>
+            <textarea name="message" id="message" rows="5" cols="45" placeholder="Please share your detailed feedback here..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Preferences</legend><br>
+            <label>Preferred Contact Method</label><br>
+            <label>
+                <input type="radio" name="contact" value="1">Email
+            </label><br>
+            <label>
+                <input type="radio" name="contact" value="2">Phone
+            </label><br>
+            <label>
+                <input type="radio" name="contact" value="3">SMS
+            </label><br>
+            <label>
+                <input type="radio" name="contact" value="4">Postal Mail
+            </label><br>
+            <label>
+                <input type="radio" name="contact" value="5">Do not contact me
+            </label><br><br>
+
+            <label>Best Time to Contact</label><br>
+            <select name="Contact" id="Contact">
+                <option value>Select preferred time</option>
+                <option value>Morning</option>
+                <option value>Afternoont</option>
+                <option value>Evening</option>
+            </select><br><br>
+        </fieldset>
+
+        <input type="checkbox" name="hear" id="hear">I confirm that all information provided is accurate *<br><br>
+
+        <button type="submit">Submit Feddback</button>
+        <button type="reset">Clear All Fields</button>
+        </section>
+    </main>
+</body>
+</html>
