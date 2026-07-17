@@ -52,10 +52,6 @@
   background-color: #ddd;
 }
 
-/*
-display: none removes the element from the page and it takes up no space.
-visibility: hidden hides the element, but its space remains on the page.
-*/
 #note {
   display: none;
 }
