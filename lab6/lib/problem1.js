@@ -1,6 +1,12 @@
 function validateInput(input) {
     const number = Number(input);
-    return input !== null && input.trim() !== "" && Number.isInteger(number) && number > 0;
+
+    return (
+        input !== null &&
+        input.trim() !== "" &&
+        Number.isInteger(number) &&
+        number > 0
+    );
 }
 
 function findPrimes(limit) {
@@ -13,6 +19,7 @@ function findPrimes(limit) {
                 continue checkNumber;
             }
         }
+
         primes.push(number);
     }
 
@@ -20,7 +27,9 @@ function findPrimes(limit) {
 }
 
 function displayPrimes(primes, limit) {
-    alert("For n = " + limit + " prime numbers are " + primes.join(","));
+    alert(
+        `For n = ${limit} prime numbers are ${primes.join(",")}`
+    );
 }
 
 function main() {
@@ -32,6 +41,7 @@ function main() {
 
     const limit = Number(input);
     const primes = findPrimes(limit);
+
     displayPrimes(primes, limit);
 }
 
