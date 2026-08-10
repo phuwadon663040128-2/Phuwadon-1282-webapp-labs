@@ -1,0 +1,13 @@
+# Local Codex files
+/.codex_tmp/
+/AGENTS.md
+
+# Keep submission archives and unrelated root files local
+*.zip
+/.DS_Store
+**/.DS_Store
+/README.md
+/index.html
+/test.html
+/styles/
+/test-site/
