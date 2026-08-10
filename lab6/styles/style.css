@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
@@ -24,41 +28,22 @@ h1 {
 
 h2 {
     margin: 0 0 40px;
-    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-size: 1.75rem;
 }
 
 ul,
 ol {
     margin: 0 0 48px;
     padding-left: 40px;
-    font-size: clamp(1.1rem, 2vw, 1.75rem);
+    font-size: 1rem;
 }
 
 li {
     margin-bottom: 8px;
 }
 
-@media (max-width: 480px) {
-    main {
-        padding: 20px 16px;
-    }
-
-    h1 {
-        margin-bottom: 32px;
-        font-size: 1.7rem;
-    }
-
-    h2 {
-        margin-bottom: 24px;
-        font-size: 1.55rem;
-        line-height: 1.25;
-    }
-
-    ul,
-    ol {
-        margin-bottom: 32px;
-        padding-left: 28px;
-        font-size: 1rem;
-        line-height: 1.45;
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
     }
 }

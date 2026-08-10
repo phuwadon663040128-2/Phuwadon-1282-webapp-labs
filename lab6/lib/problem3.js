@@ -83,13 +83,12 @@ function runTwoNumberCalculator() {
     const operation = readOperation("Enter an operation (+, -, *, /)");
     const operationFunction = getOperationFunction(operation);
     const firstNumber = readValidNumber("Enter the first number");
-    let secondNumber = readValidNumber("Enter the second number");
-    let result = operationFunction(firstNumber, secondNumber);
+    const secondNumber = readValidNumber("Enter the second number");
+    const result = operationFunction(firstNumber, secondNumber);
 
-    while (result === null) {
+    if (result === null) {
         alert("Cannot divide by zero");
-        secondNumber = readValidNumber("Enter the second number");
-        result = operationFunction(firstNumber, secondNumber);
+        return;
     }
 
     alert(`${firstNumber} ${operation} ${secondNumber} = ${result}`);
@@ -154,6 +153,15 @@ function runMultipleNumberCalculator() {
 }
 
 window.addEventListener("load", function () {
-    runTwoNumberCalculator();
-    runMultipleNumberCalculator();
+    const calculatorType = prompt(
+        "Enter calculator type (0 for two numbers, 1 for multiple numbers)"
+    );
+
+    if (calculatorType === "0") {
+        runTwoNumberCalculator();
+    } else if (calculatorType === "1") {
+        runMultipleNumberCalculator();
+    } else {
+        alert("No calculator selected");
+    }
 });
