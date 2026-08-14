@@ -19,10 +19,9 @@
     <p><a href="http://homepages.wmich.edu/~mcgrew/nq.htm">See more</a></p>
 
     <script>
-        // Step 1: Store all doth that are inside lis in dothEls
+        
         const dothEls = document.querySelectorAll("li .doth");
 
-        // Step 2: Iterate through them and change doth to does
         dothEls.forEach((dothEl) => {
             dothEl.textContent = "does";
         });
