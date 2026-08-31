@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: min(18.5rem, 60vw);
+  height: auto;
+}

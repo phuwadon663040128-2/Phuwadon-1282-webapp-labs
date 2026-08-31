@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+}
+
+#cat-pic {
+  display: block;
+  width: 100%;
+  max-width: 37.5rem;
+  height: auto;
+  cursor: crosshair;
+}
+
+#mustache-pic {
+  position: absolute;
+  top: 2rem;
+  left: min(65vw, 38.5rem);
+  width: 6.25rem;
+  height: auto;
+}

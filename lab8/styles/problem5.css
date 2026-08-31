@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+div {
+  position: relative;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: example 2s linear 1s infinite alternate;
+}
+
+@keyframes example {
+  from {
+    left: 0;
+    background-color: red;
+  }
+
+  to {
+    left: 200px;
+    background-color: yellow;
+  }
+}
