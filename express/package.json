@@ -1,0 +1,13 @@
+{
+  "name": "express-request-exercise",
+  "version": "1.0.0",
+  "description": "A simple Express server that processes a client request",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
