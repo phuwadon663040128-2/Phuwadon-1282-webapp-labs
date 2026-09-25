@@ -1,0 +1,15 @@
+{
+  "name": "lab10-packages-apis",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "calculator": "node calculator.js",
+    "weather": "node weather.js",
+    "ip-api": "node ip-api.js"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.0.0",
+    "axios": "^1.12.2",
+    "express": "^5.1.0"
+  }
+}
