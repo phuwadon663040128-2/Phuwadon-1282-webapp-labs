@@ -1,0 +1,61 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  background: #fff;
+  font-synthesis: none;
+}
+
+body {
+  margin: 8px;
+}
+
+main,
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  gap: 18px;
+}
+
+.profile {
+  max-width: 100%;
+  text-align: center;
+}
+
+.profile h1,
+.profile h2 {
+  box-sizing: border-box;
+  margin: 0 0 16px;
+  padding: 0 8px;
+  max-width: 100%;
+  background: #000;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.profile h2 {
+  width: 175px;
+}
+
+.profile img {
+  display: block;
+  object-fit: contain;
+}
+
+.profile a {
+  margin-top: 2px;
+  color: #60369b;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.profile a:focus-visible {
+  outline: 2px solid #60369b;
+  outline-offset: 3px;
+}
