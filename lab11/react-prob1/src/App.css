@@ -1,0 +1,16 @@
+.github-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.github-info h1 {
+  font-size: 40px;
+}
+
+.github-info a {
+  margin-top: 16px;
+  font-size: 24px;
+}
